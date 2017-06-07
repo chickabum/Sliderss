@@ -1,0 +1,53 @@
+h1 {
+	text-align: center;
+}
+
+/*wyśrodkowanie slidera i nadanie mu szerokości*/
+#slider {
+	margin: 0 auto;
+	width: 400px;
+}
+
+#frame {
+	height: 200px;
+	overflow: hidden;
+}
+
+#slides {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+#navigation {
+	text-align: center;
+}
+
+#navigation a {
+	display: inline-block;
+	width: 30px;
+	background: #72004A;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: all linear .1s;
+	margin-top: 10px;
+}
+
+#navigation a:hover {
+	background: #D258A7;
+}
+
+#slides img {
+	position: absolute;
+	top: 0;
+	left: -300px;
+	z-index: 1;
+	opacity: 0;
+  	transition: all ease-out .7s;
+}
+
+#slides img:target {
+	left: 0;
+  	z-index: 2;
+  	opacity: 1;
+}
